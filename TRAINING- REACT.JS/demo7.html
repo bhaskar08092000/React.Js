@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<script>
+    //nested functions and closure
+    function outerFunction(arg){
+        var variableInOuterFunction=arg;
+        function bar(){
+            console.log('bar');
+            console.log(arg);
+            //try everything
+            
+            console.log(variableInOuterFunction);
+            //accessing a variable from outer scope
+
+        }-
+        bar();
+    }
+    outerFunction('hello closure');
+    //this will log hello closure
+    //inner function is using state of outer function.
+    //learn fundamentals of javascript if you are new to react
+    // inner function will not execute automatically.
+
+</script>

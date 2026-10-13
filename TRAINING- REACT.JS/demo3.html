@@ -1,0 +1,77 @@
+//we are storing definintion of function in variable - exclusive and powerful
+
+<script>
+    function hello() {
+        console.log('hello')
+
+    }
+    var foo1 = function namedFunction(){
+        //what can we do
+        //why
+        //we are storing definintion of function in variable - exclusive and powerful
+        console.log('foo1,named function');
+    }
+    //named function();
+    
+    foo1();
+
+    function a(){
+        console.log('inside a');
+        b();
+    }
+    function b() {
+        console.log('inside b');
+        c();
+    function c() {
+        console.log('inside c');
+        c();
+    }
+    a();
+    // this is synchronous but we use async style
+    //Asynchronous style is followed.
+
+    function foo() {
+        return 123;
+    }
+    function bar(){
+        console.log('bar function returns nothing useful');
+
+    }
+    var a = foo(;
+    console.log('a' + a);
+    bar();
+    //console.log(bar)
+    //it cant be done as it doesnt return anything
+    // we create a split in the function definition
+    var f1 = function temp(){
+        return 789;
+    }
+    var a1 = f1();
+
+    var f2 = function(){
+    return 345;
+    var b = f2();
+    console.log(b);
+    console.log(fr());
+
+    
+    //HOF
+    function hof1(callback1,callback2){
+        callback1(); //this will invoke the function
+        callback2();//this will invoke the function
+        console.log(callback1);//this will print the definition
+        console.log(callback2);//this will print the definition
+    }
+    hof1(foo, bar); //FOO AND BAR ARE THE CALL BACK
+    var n1 = 10;
+    var n2 = 20;
+    hof1(n1, n2);
+
+}
+
+    )
+
+
+
+
+</script>

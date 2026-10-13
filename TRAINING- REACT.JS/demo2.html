@@ -1,0 +1,21 @@
+
+
+
+
+
+
+<script>
+
+    var foo = 123;
+    if(true){
+
+        (function (){
+            var foo = 456;
+            console.log('foo' + foo );
+
+
+        })(); // we are creating a function to create a new scope
+        console.log('foo' + foo);
+
+    }
+</script>
